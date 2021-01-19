@@ -9,11 +9,21 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var jokeLabel: UILabel!
+    @IBOutlet var punchlineLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func showJoke(_ sender: UIButton) {
+        jokeLabel.text = "The first byte asked the second byte, \"are you feeling okay?\""
+    }
+    
+    @IBAction func showPunchLine(_ sender: UIButton) {
+        punchlineLabel.text = "No, I'm just feeling a bit off."
+    }
 
 }
 
